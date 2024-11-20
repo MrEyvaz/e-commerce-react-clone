@@ -30,8 +30,8 @@ function Navbar() {
 
   const [searchQuery, setSearchQuery] = useState("")
   const [filteredProducts, setFilteredProducts] = useState([])
-console.log("userdataphoto", userData?.photo_url);
-console.log(userData);
+  console.log("userdataphoto", userData?.photo_url);
+  console.log(userData);
 
   const navigate = useNavigate()
 
@@ -111,7 +111,7 @@ console.log(userData);
                     </div>
                     <div>
                       {product.title}
-                      <div style={{marginTop: "6px"}}>
+                      <div style={{ marginTop: "6px" }}>
                         {product.price}
                       </div>
                     </div>
@@ -147,7 +147,7 @@ console.log(userData);
                 aria-haspopup="true"
                 aria-expanded={open ? 'true' : undefined}
               >
-                <Avatar src={userData?.photo_url || ''} className={styles.accountIcon} />
+                <Avatar src={userData?.photo_url} className={styles.accountIcon} />
               </IconButton>
             </Tooltip>
           </Box>
@@ -188,7 +188,7 @@ console.log(userData);
             anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
           >
             <MenuItem onClick={handleClose} className={styles.menuItem}>
-              <Avatar src={userData?.photo_url || ''} />
+              <Avatar src={userData?.photo_url} />
               <Link to="/myaccount">Manage My Account</Link>
             </MenuItem>
             <Divider />

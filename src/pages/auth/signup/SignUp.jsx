@@ -50,7 +50,6 @@ function SignUp() {
             const auth = getAuth();
             const userCredential = await createUserWithEmailAndPassword(auth, email, password);
             const user = userCredential.user;
-            console.log("user", user);
 
             if (user) {
                 await addDoc(collection(db, "accountDatas"), {

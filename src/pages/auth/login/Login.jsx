@@ -43,8 +43,6 @@ function Login() {
             const credential = await signInWithEmailAndPassword(auth, email, password)
             const user = credential.user //email, password, photoUrl, uid
 
-            console.log(user);
-
             if (userData) {
                 console.log(userData);
                 
