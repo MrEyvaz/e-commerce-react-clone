@@ -23,7 +23,11 @@ function WishList() {
     const handleProductClick = (productId) => {
         navigate(`/product/${productId}`)
     }
-
+    console.log("Favorites array:", favorites);
+    favorites.forEach((fav) => {
+        console.log("Favorite item:", fav);
+    });
+    
     return (
         <div>
             {/* Sale and language selector */}
@@ -38,7 +42,7 @@ function WishList() {
                 {favorites.length > 0 ? (
                     favorites.map((fav) => (
                         <li key={fav.id} className={styles.wishListItem}>
-                            <img src={fav.item.image} alt="" />
+                            <img src={fav.item.image} alt={fav.item.title} />
                             <h5>{fav.item.title}</h5>
                             <span style={{ color: "rgb(219,68,68)", fontSize: "18px" }}>{fav.item.price}</span>
                             <span style={{ marginLeft: "24px", textDecoration: "line-through", fontSize: "18px" }}>{fav.item.discountPrice}</span>
