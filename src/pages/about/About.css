@@ -91,6 +91,10 @@
     margin-top: 20px;
 }
 
+.team-members-details p{
+    display: flex;
+    justify-content: center;
+}
 
 .team-member-social-links {
     display: flex;
