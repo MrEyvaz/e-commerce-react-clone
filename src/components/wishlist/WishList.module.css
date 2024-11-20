@@ -1,0 +1,113 @@
+.wishListItems {
+    display: grid;
+    grid-template-columns: repeat(3, 27rem);
+}
+
+.wishListItem img {
+    width: 200px;
+    height: 200px;
+}
+
+.wishListItem {
+    list-style: none;
+    margin-left: 100px;
+    text-align: left;
+    margin-bottom: 7rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 47px 42px 45px 64px;
+    margin-top: 4rem;
+    cursor: pointer;
+}
+
+.wishListItem h5 {
+    margin-top: 20px;
+    height: 45px;
+}
+
+.wishlistButton button {
+    margin-top: 30px;
+}
+
+.flashSalesActions svg {
+    position: relative;
+    background: rgb(243, 243, 243);
+    width: 20%;
+    height: 40px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.wishListActions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.noFountTitle {
+    display: flex;
+    justify-content: center;
+    width: 96vw;
+    font-size: 28px;
+    align-items: center;
+    height: 50vh;
+}
+
+.wishListCountTitle {
+    display: flex;
+    margin-top: 6rem;
+    margin-left: 7rem;
+}
+
+.wishListVertical {
+    background-color: rgb(219, 68, 68);
+    width: 16px;
+    height: 30px;
+    position: relative;
+    top: 24px;
+    left: 10%;
+    border-radius: 2px;
+}
+
+.justForYouSection h5 {
+    margin-left: 12rem;
+    font-size: 28px;
+    margin-top: -8px;
+}
+
+.justForYouItem img {
+    width: 200px;
+    height: 200px;
+}
+
+.justForYouItems {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    margin-top: 80px;
+    margin-right: 28px;
+}
+
+.justForYouItem h6 {
+    margin-top: 40px;
+    font-size: 20px;
+    height: 45px;
+}
+
+.justForYouItem span {
+    font-size: 20px;
+    color: rgb(219, 68, 68);
+}
+
+.justForYouItem {
+    text-align: left;
+    font-size: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 47px 42px 45px 64px;
+    margin-left: 47px;
+    cursor: pointer;
+}
+
+.justForYouButton {
+    margin-top: 50px;
+}

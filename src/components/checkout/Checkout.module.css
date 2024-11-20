@@ -1,0 +1,124 @@
+.inputFields input {
+    width: 30vw;
+    outline: none;
+    margin-bottom: 40px;
+    background-color: rgb(245, 245, 245);
+    border: none;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.inputFields {
+    text-align: left;
+    margin-left: 7rem;
+}
+
+.inputFields span {
+    color: rgb(243, 192, 192);
+}
+
+.inputFields label {
+    color: rgb(199, 199, 199);
+}
+
+.inputFields .checkbox {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.inputFields .checkboxLabel {
+    position: relative;
+    margin-left: 50px;
+    color: black;
+    cursor: pointer;
+}
+
+.inputFields .checkboxLabel::before {
+    content: "";
+    position: absolute;
+    border-radius: 3px;
+    left: 0;
+    top: 0;
+}
+
+.inputFields .checkbox:checked+.checkboxLabel::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 4px;
+    font-size: 14px;
+    color: black;
+}
+
+.productImage {
+    width: 100px;
+    height: 100px;
+}
+
+.cartSummary {
+    padding: 36px 45px 36px 45px;
+    text-align: left;
+    width: 30vw;
+    position: relative;
+    left: -45px;
+}
+
+.cartSummary p {
+    font-size: 18px;
+}
+
+.cartSummary div:nth-child(1),
+.cartSummary div:nth-child(2) {
+    border-bottom: 1px solid;
+    margin-bottom: 40px;
+}
+
+.order button {
+    padding: 12px;
+    width: 13vw;
+}
+
+.products {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.products :nth-child(3) {
+    margin-left: 80px;
+}
+
+.products :nth-child(2) {
+    margin-left: 20px;
+}
+
+.cashOrBank {
+    display: flex;
+    align-items: center;
+    margin-left: 55px;
+}
+
+.order label {
+    margin-left: 10px;
+}
+
+.order {
+    font-size: 19px;
+    position: relative;
+    left: -56px;
+}
+
+.order input {
+    width: 22px;
+    height: 19px;
+}
+
+.order button {
+    margin-left: 56px;
+}
+
+.cartContainer {
+    margin-top: 10rem;
+}

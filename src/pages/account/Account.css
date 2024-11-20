@@ -1,0 +1,92 @@
+.account-container {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    width: 50%;
+    margin-left: 23rem;
+    margin-top: 7rem;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+.account-container h3 {
+    display: flex;
+    padding-left: 5rem;
+    margin-bottom: 3rem;
+    color: rgb(220,76,76);
+}
+
+.full-name {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.full-name label {
+    display: flex;
+    margin-bottom: 7px;
+}
+
+.email-address label {
+    display: flex;
+    margin-bottom: 7px;
+}
+
+.full-name input {
+    display: block;
+    background: rgb(245, 245, 245);
+    border: 0;
+    padding: 8px;
+    width: 16rem;
+    outline: none;
+}
+
+.email-address {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.email-address input {
+    display: block;
+    background: rgb(245, 245, 245);
+    border: 0;
+    padding: 8px;
+    width: 16rem;
+    outline: none;
+}
+
+.password-section {
+    display: flex;
+    flex-direction: column;
+    margin-left: 82px;
+}
+
+.password-section input {
+    background: rgb(245, 245, 245);
+    border: 0;
+    padding: 8px;
+    width: 16rem;
+    outline: none;
+    margin-top: 20px;
+    width: 595px;
+}
+
+.password-section span {
+    display: flex;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 83px;
+    gap: 60px;
+}
+
+.action-buttons button{
+    width: 23%;
+    border: 0px;
+    padding: 11px;
+    border-radius: 5px;
+    background-color: rgb(219, 68, 68);
+    color: white;
+    margin-top: 3rem;
+}

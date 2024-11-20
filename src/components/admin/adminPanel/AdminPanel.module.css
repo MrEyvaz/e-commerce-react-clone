@@ -1,0 +1,78 @@
+.th {
+    padding: 30px;
+    width: 140px;
+}
+
+.table {
+    width: 106%;
+    margin-left: -42px;
+}
+
+.table td {
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
+
+.table tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.table tr:last-child {
+    border-bottom: none;
+}
+
+.searchDetails {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.searchDetails input {
+    border-radius: 5px;
+    padding: 6px;
+    width: 22rem;
+    margin-right: 30px;
+    border: 1px solid;
+    border-color: rgb(185, 185, 185);
+    outline: none;
+}
+
+.searchResults {
+    max-height: 140px;
+    overflow-y: auto;
+    position: absolute;
+    z-index: 1;
+    border: 1px solid #ccc;
+    top: 100%;
+    width: 22rem;
+    background-color: white;
+    text-align: left;
+}
+
+.noProduct {
+    padding: 10px;
+    height: 50px;
+    color: gray;
+    display: flex;
+    justify-content: center;
+}
+
+.searchResultsItem {
+    border-bottom: 1px solid #eee;
+    padding: 10px;
+}
+
+.searchResultsItems:hover {
+    background-color: #f0f0f0;
+}
+
+.searchResultsItems div:nth-child(1) img {
+    width: 100px;
+    height: 100px;
+}
+
+.searchResultsItems {
+    display: flex;
+    padding: 10px;
+    cursor: pointer;
+}

@@ -1,0 +1,65 @@
+.loginContent {
+    display: flex;
+    margin-top: 4rem;
+    align-items: center;
+}
+
+.loginSideImage {
+    height: 95vh;
+}
+
+.formSection {
+    margin-left: 13rem;
+}
+
+.title {
+    text-align: left;
+    margin-left: 3rem;
+    margin-bottom: 1rem;
+}
+
+.login-inputField {
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 17px;
+    border-style: hidden hidden solid hidden;
+    outline: none;
+}
+
+.loginButton {
+    width: 7rem;
+    border: 0px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(219, 68, 68);
+    color: white;
+}
+
+.subtitle {
+    margin-left: 3rem;
+    margin-bottom: 2rem;
+}
+
+.loginPrompt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    gap: 17px;
+}
+
+.loginActions {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.forgetPasswordLink {
+    margin-bottom: 0;
+    color: red;
+    text-decoration: none;
+}
+
+.login-inputGroup> :nth-child(2) {
+    margin-bottom: 3rem;
+}

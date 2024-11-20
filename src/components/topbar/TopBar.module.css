@@ -1,0 +1,12 @@
+.dFlex {
+    display: flex;
+    background-color: black;
+    color: white;
+    align-items: center;
+    height: 9vh;
+    justify-content: center;
+}
+
+.dFlex p {
+    margin-top: 12px;
+}
