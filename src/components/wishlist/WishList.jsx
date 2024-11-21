@@ -52,7 +52,7 @@ function WishList() {
                                     {favorites.includes(fav) ? (
                                         <FavoriteIcon style={{ color: "red" }} onClick={(e) => { e.stopPropagation(); toggleFavorite(fav) }} />
                                     ) : (
-                                        <FavoriteBorderIcon onClick={(e) => { e.stopPropagation; toggleFavorite(fav) }} />
+                                        <FavoriteBorderIcon onClick={(e) => { e.stopPropagation(); toggleFavorite(fav) }} />
                                     )}
 
                                 </div>
