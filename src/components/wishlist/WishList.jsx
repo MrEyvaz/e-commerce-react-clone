@@ -48,11 +48,11 @@ function WishList() {
                                 <span style={{ color: "rgb(219,68,68)", fontSize: "18px" }}>{fav.item.price}</span>
                                 <span style={{ marginLeft: "24px", textDecoration: "line-through", fontSize: "18px" }}>{fav.item.discountPrice}</span>
                                 <div className={styles.wishListActions}>
-                                    <button className='btn btn-dark' onClick={() => addToCart(fav.item)}>Add to Cart</button>
+                                    <button className='btn btn-dark' onClick={(e) => { e.stopPropagation(); addToCart(fav.item) }}>Add to Cart</button>
                                     {favorites.includes(fav) ? (
-                                        <FavoriteIcon style={{ color: "red" }} onClick={() => toggleFavorite(fav)} />
+                                        <FavoriteIcon style={{ color: "red" }} onClick={(e) => { e.stopPropagation(); toggleFavorite(fav) }} />
                                     ) : (
-                                        <FavoriteBorderIcon onClick={() => toggleFavorite(fav)} />
+                                        <FavoriteBorderIcon onClick={(e) => { e.stopPropagation; toggleFavorite(fav) }} />
                                     )}
 
                                 </div>
