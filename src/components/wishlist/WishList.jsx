@@ -41,29 +41,30 @@ function WishList() {
             <ul className={styles.wishListItems}>
                 {favorites.map((fav) => (
                     <li key={fav.id} className={styles.wishListItem}>
-                        {fav.item ? (
-                            <>
-                                <img src={fav.item.image} alt={fav.item.title} />
-                                <h5>{fav.item.title}</h5>
-                                <span style={{ color: "rgb(219,68,68)", fontSize: "18px" }}>{fav.item.price}</span>
-                                <span style={{ marginLeft: "24px", textDecoration: "line-through", fontSize: "18px" }}>{fav.item.discountPrice}</span>
-                                <div className={styles.wishListActions}>
-                                    <button className='btn btn-dark' onClick={(e) => { e.stopPropagation(); addToCart(fav.item) }}>Add to Cart</button>
-                                    {favorites.includes(fav) ? (
-                                        <FavoriteIcon style={{ color: "red" }} onClick={(e) => { e.stopPropagation(); toggleFavorite(fav) }} />
-                                    ) : (
-                                        <FavoriteBorderIcon onClick={(e) => { e.stopPropagation(); toggleFavorite(fav) }} />
-                                    )}
-
-                                </div>
-                            </>
-                        ) : (
-                            <p>Invalid item</p>
+                        <img src={fav.item?.image || fav.image} alt={fav.item?.title || fav.title} />
+                        <h5>{fav.item?.title || fav.title}</h5>
+                        <span style={{ color: "rgb(219,68,68)", fontSize: "18px" }}>
+                            {fav.item?.price || fav.price}
+                        </span>
+                        {fav.item?.discountPrice && (
+                            <span style={{ marginLeft: "24px", textDecoration: "line-through", fontSize: "18px" }}>
+                                {fav.item.discountPrice}
+                            </span>
                         )}
+                        <div className={styles.wishListActions}>
+                            <button className="btn btn-dark" onClick={(e) => { e.stopPropagation(); addToCart(fav.item || fav); }}                          >
+                                Add to Cart
+                            </button>
+                            {favorites.includes(fav) ? (<FavoriteIcon style={{ color: "red" }} onClick={(e) => { e.stopPropagation(); toggleFavorite(fav); }} />
+                            ) : (
+                                <FavoriteBorderIcon onClick={(e) => { e.stopPropagation(); toggleFavorite(fav); }} />
+                            )}
+                        </div>
                     </li>
                 ))}
-
             </ul>
+
+
 
             <div className={styles.wishListVertical}></div>
 
