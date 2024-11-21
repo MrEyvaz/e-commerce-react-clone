@@ -76,7 +76,7 @@ function WishList() {
                             <h6>{product.title}</h6>
                             <span>{product.price}</span>
                             <div className={styles.justForYouButton}>
-                                <button className='btn btn-dark' onClick={() => addToCart(product)}>Add to Cart</button>
+                                <button className='btn btn-dark' onClick={(e) => { e.stopPropagation(); addToCart(product) }}>Add to Cart</button>
                             </div>
                         </li>
                     ))}
