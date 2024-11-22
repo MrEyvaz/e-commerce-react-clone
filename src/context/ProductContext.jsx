@@ -64,7 +64,7 @@ export const ProductProvider = ({ children }) => {
 
     const createProduct = async (newProduct) => {
         try {
-            const docRef = await addDoc(db, "products", newProduct)
+            const docRef = await addDoc(collection(db, "products"), newProduct);
             const createdProduct = {id: docRef.id, ...newProduct}
             setProducts((prevProducts) => [...prevProducts, createdProduct])
             return createdProduct
