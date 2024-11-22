@@ -103,7 +103,7 @@ function EditAdminProducts() {
         });
         console.log("createProduct", createdProduct);
 
-        setProducts((prevProducts) => [...prevProducts, createdProduct]);
+        setProducts((prevProducts) => [...prevProducts.filter(p => p.id !== createdProduct.id), createdProduct]);
       }
 
       navigate("/admin");
@@ -152,7 +152,7 @@ function EditAdminProducts() {
           <label className={styles.label} htmlFor="productCategory">Category</label>
           <select id="productCategory" className={styles.productCategory} name='category' value={formData.category} onChange={handleChange}>
             <option value="Computer">Computer</option>
-            <option value="Smart Phone">Smartphone</option>
+            <option value="Smartphone">Smartphone</option>
             <option value="Tablet">Tablet</option>
             <option value="Television">Television</option>
             <option value="Watch">Watch</option>
