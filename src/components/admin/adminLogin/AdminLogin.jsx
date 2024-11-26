@@ -37,7 +37,7 @@ function AdminLogin() {
 
                     <div>
                         <label htmlFor="password" className={styles.label}>Password</label>
-                        <input type="text" id="password" value={password} onChange={(e) => setPassword(e.target.value)} className={styles.inputField} />
+                        <input type="password" id="password" value={password} onChange={(e) => setPassword(e.target.value)} className={styles.inputField} />
                     </div>
 
                     <button type='submit' className={styles.button}>Submit</button>

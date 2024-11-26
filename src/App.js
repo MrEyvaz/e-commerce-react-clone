@@ -26,6 +26,7 @@ import { ExploreOurProductsProvider } from './context/ExploreOurProductsContext'
 import CategoryPage from './components/categoryPage/CategoryPage';
 import ProductDetails from './components/productDetails/ProductDetails';
 import NotFound from './pages/notfound/NotFound';
+import CustomerAdmin from './components/admin/customerAdmin/CustomerAdmin';
 
 function App() {
   return (
@@ -55,6 +56,7 @@ function App() {
                         <Route path='/category/:categoryName' element={<CategoryPage />} />
                         <Route path='/product/:productId' element={<ProductDetails />} />
                         <Route path='*' element={<NotFound/>}/>
+                        <Route path='/customerAdmin' element={<CustomerAdmin/>}/>
                       </Routes>
                     </BrowserRouter>
                     <ToastContainer

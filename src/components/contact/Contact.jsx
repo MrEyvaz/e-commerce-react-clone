@@ -91,7 +91,7 @@ function Contact() {
                         <div className={styles.inputGroup}>
                             <input type="text" name='name' value={formData.name} className={styles.inputField} placeholder='Your Name' onChange={handleChange} />
                             <input type="email" name='email' value={formData.email} className={styles.inputField} placeholder='Your Email' onChange={handleChange} />
-                            <input type="text" name='phone' value={formData.phone} className={styles.inputField} placeholder='Your Phone' onChange={handleChange} />
+                            <input type="phone" name='phone' value={formData.phone} className={styles.inputField} placeholder='Your Phone' onChange={handleChange} />
                         </div>
 
                         <div className={styles.contactMessage}>

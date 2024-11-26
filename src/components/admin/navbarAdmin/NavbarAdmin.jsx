@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Dropdown from 'react-bootstrap/Dropdown';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 function NavbarAdmin() {
     const navigate = useNavigate()
@@ -35,8 +35,8 @@ function NavbarAdmin() {
                                 <Dropdown.Item href="#/action-1" active onClick={handleLogout}>
                                     Logout
                                 </Dropdown.Item>
-                                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                                <Dropdown.Item as={Link} to="/admin">Products</Dropdown.Item>
+                                <Dropdown.Item as={Link} to="/customerAdmin">Customer Contact Details</Dropdown.Item>
                                 <Dropdown.Divider />
                                 <Dropdown.Item href="#/action-4">Separated link</Dropdown.Item>
                             </Dropdown.Menu>
